@@ -12,7 +12,7 @@ public class Calculator {
 
     //Делить на 0 нельзя. Можно инициализировать проверку Predicate
     BinaryOperator<Integer> devide = (x, y) -> x / y;
-
+    BinaryOperator<Integer> devideTrue = (x, y) -> y == 0 ? 0 : x/y;
 
     UnaryOperator<Integer> pow = x -> x * x;
     UnaryOperator<Integer> abs = x -> x > 0 ? x : x * -1;
